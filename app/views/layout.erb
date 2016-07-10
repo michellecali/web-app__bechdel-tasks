@@ -2,44 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
 
     <title>Bollywood Bechdel</title>
   </head>
 
 <body>
 
-<nav>
-  <div class="container">
-    <a href="/">Bollywood Bechdel</a>
-    <ul>
-      <li>
-        <a href="/results/list">Bechdel Gallery</a>
-      </li>
+  <div class="header">
+    <a class = "header__HomePage" href="/">Bollywood Bechdel</a>
+    <a class = "header__NavLink" href="/results/list">Bechdel Gallery</a>
+    <a class = "header__NavLink" href="/results/all">All Top Bollywood Movies</a>
 
       <% if @current_user == nil %>
-      	<li class="active">
-          <a href="/users/new">Create account</a>
-        </li>
-        <li class="active">
-          <a href="/users/login">Log in</a>
-        </li>
+        <a class="header__NavLink" href="/users/new">Create account</a>
+        <a class="header__NavLink" href="/users/login">Log in</a>
       <% else %>
-       	<li class="active">
-       		<a href="/users/<%= @current_user.id %>/view">Profile</a>
-       	</li>
-
-       	<li>
-       		<a href="/logout">Logout</a>
-       	</li>
+       	<a class="header__NavLink" href="/users/<%= @current_user.id %>/view">Profile</a>
+       	<a class="header__NavLink" href="/logout">Logout</a>
       <% end %>
-    </ul>
   </div>
-</nav>
 
 <% if @error != nil %>
   <div class="container">
