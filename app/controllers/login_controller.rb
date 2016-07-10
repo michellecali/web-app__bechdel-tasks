@@ -1,4 +1,4 @@
-MyApp.get "/login" do
+MyApp.get '/users/login' do
   erb :"users/login"
 end
 
