@@ -1,3 +1,45 @@
+.body{
+  margin: 0;
+
+}
+
+.header{
+  display: inline-flex;
+  width: 100%;
+  background-color: white;
+
+}
+.header__HomePage{
+
+}
+.header__NavLink{
+
+}
+.bechdelInfo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.bechdelInfo__Header{
+ 
+}
+.bechdelInfo__criteriaList{
+ 
+}
+.bechdelInfo__wikipediaLink
+ 
+}
+.footer{
+ background-image: url('/assets/old-movie.jpg');
+ width: 100px;
+ height: 100px;
+
+}
+
+
+
 .bechdel-test-info {
   background-color: rgb(27, 28, 29);
   color: #999;
