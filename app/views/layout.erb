@@ -39,37 +39,37 @@
 <!-- Then the combined layout + view is sent back to the client. -->
 <%= yield %>
 
-<div class="footer"
-    <div class="container">
-      <p>
-        Find a Bollywood movie with <strong>strong</strong> female characters.
-      </p>
 
-      <form action="/movies/search" method="post">
-        <select name="search_category">
-          <option selected disabled>Choose category</option>
-          <option value= "title">Title</option>
-          <option value= "director">Director</option>
-        </select>
+    <div class="footer">
+      <div class="search">
+          <p>
+            Find a Bollywood movie with <strong>strong</strong> female characters.
+          </p>
 
-        <input type="text" name="search" placeholder="search for a movie">
+          <form action="/movies/search" method="post">
+            <select name="search_category">
+              <option selected disabled>Choose category</option>
+              <option value= "title">Title</option>
+              <option value= "director">Director</option>
+            </select>
 
-        <div>
-          <label>
-            <input type="checkbox" name="passes_bechdel" value="1">
-            Passes Bechdel Test
-          </label>
-        </div>
+            <input type="text" name="search" placeholder="search for a movie">
 
-        <div>
-          <button>
-            Search
-          </button>
-        </div>
-      </form>
+            <div>
+              <label>
+                <input type="checkbox" name="passes_bechdel" value="1">
+                Passes Bechdel Test
+              </label>
+            </div>
+
+            <div>
+              <button>
+                Search
+              </button>
+            </div>
+          </form>
+      </div>
     </div>
-</div>
-
 </body>
 
 </html>

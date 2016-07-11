@@ -31,11 +31,14 @@
 .bechdelInfo__wikipediaLink
  
 }
-.footer{
- background-image: url('/assets/old-movie.jpg');
- width: 100px;
- height: 100px;
-
+.photo {
+  background-color: yellow;
+}
+.footer {
+  display: flex;
+  background-image: url("/assets/old-movie.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
